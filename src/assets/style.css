@@ -1,0 +1,79 @@
+:root {
+    /* =====COLORS===== */
+    /* main colors */
+    --main-Gray: #21201F;
+    --main-LightGray: #595959;
+    --main-Silver: #9E9B98;
+    --main-Stone: #F2F1EF;
+    --main-Powder: #F8F7F5;
+    --main-White: #FFFFFF;
+    /* alpha colors */
+    --alpha-LightGray-10: hsl(0, 0%, 35%, 10%);
+    --alpha-LightGray-30: hsl(0, 0%, 35%, 30%);
+    --alpha-Silver-15: hsl(30, 3%, 61%, 15%);
+    --alpha-Silver-30: hsl(30, 3%, 61%, 30%);
+    --alpha-Powder-15: hsl(40, 18%, 97%, 15%);
+    --alpha-White-10: hsl(0, 0%, 100%, 10%);
+    --alpha-White-45: hsl(0, 0%, 100%, 45%);
+    /* accent */
+    --accent-Red: #FF5757;
+    --accent-Blue: #579AFF;
+    --accent-Green: #55D486;
+
+    /* =====FONT SIZE===== */
+    --title: 22px;
+    --subtitle: 18px;
+    --note: 16px;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: var(--main-Powder);
+    font-family: "PP Neue Montreal", sans-serif;
+}
+
+.content__wrapper {
+    display: flex;
+}
+
+/* ===== icons ===== */
+
+.icons {
+    color: var(--main-Gray);
+    width: 22px;
+    height: 22px;
+}
+
+/* =====FONTS===== */
+/* @font-face {
+    font-family: "PP Neue Montreal";
+    src: url("./assets/fonts/PPNeueMontreal-Book.woff2") format("woff2"),
+         url("./assets/fonts/PPNeueMontreal-Book.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+@font-face {
+    font-family: "PP Neue Montreal";
+    src: url("./assets/fonts/PPNeueMontreal-Medium.woff2") format("woff2"),
+         url("./assets/fonts/PPNeueMontreal-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "PP Neue Montreal";
+    src: url("./assets/fonts/PPNeueMontreal-Bold.woff2") format("woff2"),
+         url("./assets/fonts/PPNeueMontreal-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+  }

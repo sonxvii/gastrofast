@@ -1,0 +1,8 @@
+/* ===== CATALOG ===== */
+.catalog__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+    justify-content: start;
+}

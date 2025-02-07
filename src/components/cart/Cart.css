@@ -1,0 +1,7 @@
+.cart {
+    width: 200px; /* Фиксированная ширина */
+    height: 300px; /* Фиксированная высота */
+    background-color: var(--main-White); /* Фон */
+    border-radius: 10px; /* Скругление углов */
+    border: 1px solid var(--alpha-Silver-15); /* Граница */
+}

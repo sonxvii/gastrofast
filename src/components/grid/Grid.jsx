@@ -1,12 +1,18 @@
 import { Card } from "../card/Card";
+import { products } from "../../data";
 
 export function Grid() {
-    return (
-        <div className="catalog__grid">
-            <Card imgSrc="/img/img-1.webp" price="100" title="Title" weight="100" />
-            <Card imgSrc="/img/img-1.webp" price="100" title="Title" weight="100" />
-            <Card imgSrc="/img/img-1.webp" price="100" title="Title" weight="100" />
-            <Card imgSrc="/img/img-1.webp" price="100" title="Title" weight="100" />
-        </div>
-    );
+  return (
+    <div className="catalog__grid">
+      {products.map((product) => (
+        <Card
+          key={product.id}
+          imgSrc={product.imgSrc}
+          price={product.price}
+          title={product.title} 
+          weight={product.weight}
+        />
+      ))}
+    </div>
+  );
 }

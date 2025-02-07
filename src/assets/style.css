@@ -1,13 +1,13 @@
 :root {
     /* =====COLORS===== */
-    /* main colors */
+    /* ----- main colors ----- */
     --main-Gray: #21201F;
     --main-LightGray: #595959;
     --main-Silver: #9E9B98;
     --main-Stone: #F2F1EF;
     --main-Powder: #F8F7F5;
     --main-White: #FFFFFF;
-    /* alpha colors */
+    /* ----- alpha colors ----- */
     --alpha-LightGray-10: hsl(0, 0%, 35%, 10%);
     --alpha-LightGray-30: hsl(0, 0%, 35%, 30%);
     --alpha-Silver-15: hsl(30, 3%, 61%, 15%);
@@ -15,7 +15,7 @@
     --alpha-Powder-15: hsl(40, 18%, 97%, 15%);
     --alpha-White-10: hsl(0, 0%, 100%, 10%);
     --alpha-White-45: hsl(0, 0%, 100%, 45%);
-    /* accent */
+    /*  ----- accent ----- */
     --accent-Red: #FF5757;
     --accent-Blue: #579AFF;
     --accent-Green: #55D486;
@@ -43,15 +43,29 @@ body {
 
 .content__wrapper {
     display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--main-Powder);
+}
+
+.menu {
+    flex-shrink: 0;
+    width: 220px;
+}
+
+.catalog__grid {
+    flex-grow: 1;
+    width: calc(100% - 240px);
 }
 
 /* ===== icons ===== */
 
 .icons {
-    color: var(--main-Gray);
     width: 22px;
     height: 22px;
 }
+
 
 /* =====FONTS===== */
 /* @font-face {

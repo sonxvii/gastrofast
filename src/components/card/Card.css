@@ -1,4 +1,3 @@
-/* ===== CARD ===== */
 .card {
     display: flex;
     flex-direction: column;
@@ -9,27 +8,43 @@
 
     background-color: var(--main-White);
     border-radius: 10px;
-    border: 1px solid var(--alpha-Silver-15);
-    border-style: inset;
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
 }
 
+.card:hover,
+.card:focus {
+    cursor: pointer;
+}
+
+.card:hover .card__img,
+.card:focus .card__img {
+  transform: scale(1.02);
+}
+
+.card:hover .card__img__wrapper,
+.card:focus .card__img__wrapper {
+    background-color: var(--main-Stone); 
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+ }
+
+/* ----- image -----*/
 .card__img__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 8px;
-
-    width: 180px; 
-    height: 180px; 
-
-    border-radius: 10px;
-    background-color: var(--main-Powder);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 8px;
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  background-color: var(--main-Powder);
+  overflow: hidden;
+}
 
 .card__img__wrapper,
-.card__weight,
-.button__add {
+.card__weight{
   margin-bottom: 10px;
 }
 
@@ -39,6 +54,7 @@
     border-radius: 10px;
     aspect-ratio: 1;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 /* ----- price -----*/
@@ -63,8 +79,12 @@
     font-size: var(--subtitle);
     font-family: "PP Neue Montreal";
     font-weight: 500; 
-    font-size: var(--subtitle);
     margin-top: 4px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* ----- weight -----*/
@@ -85,23 +105,69 @@
     font-weight: 500;
     font-size: var(--note);
 }
-/* ----- buttnon -----*/
+/* ===== BUTTON TO COUNTER ===== */
+/* ----- button-----*/
 .button__add {
     display: flex;
-    padding: 10px;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     gap: 6px;
+    height: 42px;
     width: 100%;
-
+    
     color: var(--main-Gray);
     background-color: var(--main-Powder);
-
     border-radius: 6px;
-    border: 1px solid var(--alpha-Silver-15);
-    border-style: inset;
-    
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+
     font-family: "PP Neue Montreal", sans-serif;
     font-weight: 500;
     font-size: var(--subtitle);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
+  
+  .button__add:hover {
+    background-color: var(--alpha-Silver-15);
+  }
+  
+/* ----- counter -----*/
+  .counter {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 42px;
+    width: 100%;
+    
+    color: var(--main-White);
+    background-color: var( --accent-Green);
+    border-radius: 6px;
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+
+    font-family: "PP Neue Montreal", sans-serif;
+    font-weight: 500;
+    font-size: var(--subtitle);
+  }
+  
+/* ----- counter buttons -----*/
+  .counter__btn {
+    background: none;
+    border: none;
+    color: var( --alpha-White-45);
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .counter__btn:hover {
+    color: var(--main-White)
+  }
+  
+  /* ----- counter value -----*/
+  .counter__value {
+    font-size: var(--subtitle);
+    color: var(--main-White)
+  }
+  

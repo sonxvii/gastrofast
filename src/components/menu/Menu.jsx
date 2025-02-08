@@ -1,30 +1,19 @@
 import React, { useState } from "react";
 import "./Menu.css";
+import { menuData } from "../../data";
 
 export function Menu() {
-  const [activeIndex, setActiveIndex] = useState(null);
-
-  const handleClick = (index) => {
-    setActiveIndex(index); 
-  };
+  const [activeCategory, setActiveCategory] = useState(null);
 
   return (
     <div className="menu"> Меню
-      <div
-        className={`menu__elem ${activeIndex === 0 ? "elem__selected" : ""}`} // добавить класс
-        onClick={() => handleClick(0)}>
-        Title
-      </div>
-      <div
-        className={`menu__elem ${activeIndex === 1 ? "elem__selected" : ""}`}
-        onClick={() => handleClick(1)}>
-        Title
-      </div>
-      <div
-        className={`menu__elem ${activeIndex === 2 ? "elem__selected" : ""}`}
-        onClick={() => handleClick(2)}>
-        Title
-      </div>
+      {menuData.map((item, index) => (
+        <div
+          key={item.id}
+          className={`menu__elem ${activeCategory === index ? "elem__selected" : ""}`}
+          onClick={() => setActiveCategory(index)}>{item.title}
+        </div>
+      ))}
     </div>
   );
 }

@@ -45,18 +45,13 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    padding: 20px;
+    padding: 40px;
     background-color: var(--main-Powder);
 }
 
 .menu {
     flex-shrink: 0;
     width: 220px;
-}
-
-.catalog__grid {
-    flex-grow: 1;
-    width: calc(100% - 240px);
 }
 
 /* ===== icons ===== */

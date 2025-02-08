@@ -1,5 +1,6 @@
 import { Card } from "../card/Card";
 import { products } from "../../data";
+import "./Grid.css";
 
 export function Grid() {
   return (

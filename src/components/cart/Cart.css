@@ -1,7 +1,14 @@
 .cart {
-    width: 200px; /* Фиксированная ширина */
-    height: 300px; /* Фиксированная высота */
-    background-color: var(--main-White); /* Фон */
-    border-radius: 10px; /* Скругление углов */
-    border: 1px solid var(--alpha-Silver-15); /* Граница */
+    width: 260px;
+    height: 300px;
+    background-color: var(--main-White);
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+}
+
+.cart__item {
+    display: grid;
+    grid-template-columns: 3, 1fr;
+
 }

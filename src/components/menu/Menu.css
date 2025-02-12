@@ -20,9 +20,10 @@
 
     color: var(--main-Gray);
     font-size: var(--subtitle);
-    font-family: "PP Neue Montreal";
+    font-family: "PP Neue Montreal", sans-serif;
     font-weight: 500; 
     font-size: var(--subtitle);
+    cursor: pointer;
 
     transition: all 2ms ease-in-out;
 }

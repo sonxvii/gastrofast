@@ -1,29 +1,46 @@
-import { Plus, Minus } from "iconoir-react";
+import { useState } from "react";
+import { CartItem } from "../cart/CartItem";
+import { ShoppingBagWarning } from "iconoir-react";
+import { products } from "../../data";
 import './Cart.css';
 
 export function Cart() {
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsButtonClicked(true);
+  };
+
   return (
     <div className="cart">
-      <div className="cart__item">
-        <div className="cart__img__wrapper">
-          <div className="cart__img"></div>
-        </div>
-        
-        <div className="cart__options__wrapper">
-          <div className="cart__info__wrapper">
-            <span className="cart__title">Title</span>
-            <span className="cart__price">Цена</span>
-          </div>
-          <span className="cart__weight">200</span>
-          {/* счетчик */}
-          <button className="cart__counter">
-            <Minus className="icons" color="var(--main-Gray)" />
-            Добавить
-            <Plus className="icons" color="var(--main-Gray)" />
-          </button>
-        </div>
-
+      <span className="cart__title">Корзина</span>
+      {products.map((product) => (
+        <CartItem
+          key={product.id}
+          imgSrc={product.imgSrc}
+          price={product.price}
+          title={product.title}
+          weight={product.weight}
+          handleIncrease={() => handleIncrease(product.id)}
+          handleDecrease={() => handleDecrease(product.id)}
+        />
+      ))}
+      <div className="divider" />
+      <div className="order__warning">
+        <ShoppingBagWarning />
+        <span className="warning__text">Еще 100₽ до бесплатной доставки</span>
       </div>
+      <button
+        className="order__btn"
+        style={{
+          backgroundColor: isButtonClicked ? "var(--accent-Green)" : "", 
+          color: isButtonClicked ? "white" : "",
+          boxShadow: isButtonClicked ? "inset 0 0 0 1px var(--alpha-Silver-15)" : ""
+        }}
+        onClick={handleButtonClick}>
+          Далее
+        <span className="order__total">1000</span>
+      </button>
     </div>
   );
 }

@@ -15,3 +15,5 @@
 ### Связаться со мной
 
 Telegram: [sonxvii](https://t.me/sonxvii)
+
+© 2025 SONXVII

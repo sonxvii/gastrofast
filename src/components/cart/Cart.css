@@ -73,8 +73,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-color: var(--main-Stone);
+    background-color: var(--main-Powder);
     transition: transform 0.3s ease;
+    
 }
 
 /* ----- title -----*/

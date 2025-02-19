@@ -6,14 +6,14 @@ export function Menu() {
   const [activeCategory, setActiveCategory] = useState(null);
 
   return (
-    <div className="menu"> Меню
+    <ul className="menu"> Меню
       {menuData.map((item, index) => (
-        <div
+        <li
           key={item.id}
           className={`menu__elem ${activeCategory === index ? "elem__selected" : ""}`}
           onClick={() => setActiveCategory(index)}>{item.title}
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }

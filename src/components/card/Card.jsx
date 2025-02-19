@@ -6,9 +6,9 @@ export function Card({ imgSrc, price, title, weight }) {
   const [count, setCount] = useState(0);
   // добавить
   const handleIncrease = () => {
-    setCount((prevCount) => prevCount + 1); 
+    setCount((prevCount) => prevCount + 1);
   };
-// убрать
+  // убрать
   const handleDecrease = () => {
     if (count > 1) {
       setCount((prevCount) => prevCount - 1);
@@ -32,7 +32,7 @@ export function Card({ imgSrc, price, title, weight }) {
         </button>
       ) : (
         // счетчик
-        <div className="counter"> 
+        <div className="counter">
           <button className="counter__btn" onClick={handleDecrease}>
             <Minus className="icons" />
           </button>

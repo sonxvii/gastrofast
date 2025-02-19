@@ -5,11 +5,6 @@ import { products } from "../../data";
 import './Cart.css';
 
 export function Cart() {
-  const [isButtonClicked, setIsButtonClicked] = useState(false);
-
-  const handleButtonClick = () => {
-    setIsButtonClicked(true);
-  };
 
   return (
     <div className="cart">
@@ -30,17 +25,10 @@ export function Cart() {
         <ShoppingBagWarning />
         <span className="warning__text">Еще 100₽ до бесплатной доставки</span>
       </div>
-      <button
-        className="order__btn"
-        style={{
-          backgroundColor: isButtonClicked ? "var(--accent-Green)" : "", 
-          color: isButtonClicked ? "white" : "",
-          boxShadow: isButtonClicked ? "inset 0 0 0 1px var(--alpha-Silver-15)" : ""
-        }}
-        onClick={handleButtonClick}>
-          Далее
-        <span className="order__total">1000</span>
-      </button>
+      <button className="order__btn">
+        Далее
+      <span className="order__total">1000</span>
+    </button>
     </div>
   );
-}
+};

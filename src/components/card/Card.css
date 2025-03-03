@@ -5,6 +5,7 @@
     width: 200px;
     max-width: 100%;
     padding: 10px;
+    font-family: "PP Neue Montreal", sans-serif;
 
     background-color: var(--main-White);
     border-radius: 10px;
@@ -59,7 +60,6 @@
 /* ----- price -----*/
 .card__price {
     color: var(--main-Gray);
-    font-family: "PP Neue Montreal", sans-serif;
     font-weight: 700;
     font-size: var(--title);
 }
@@ -67,7 +67,6 @@
 .card__price::after {
     display: inline-block;
     content: "\00A0₽"; 
-    font-family: "PP Neue Montreal", sans-serif;
     font-weight: 700; 
     font-size: var(--title); 
 }
@@ -76,7 +75,6 @@
 .card__title {
     color: var(--main-Gray);
     font-size: var(--subtitle);
-    font-family: "PP Neue Montreal", sans-serif;
     font-weight: 500; 
     margin-top: 4px;
 
@@ -89,7 +87,6 @@
 /* ----- weight -----*/
 .card__weight {
     color: var(--main-Silver);
-    font-family: "PP Neue Montreal", sans-serif;
     font-weight: 500;
     font-size: var(--note);
     margin-top: 20px;
@@ -98,7 +95,6 @@
 .card__weight::after {
     display: inline-block; 
     content: "\00A0гр.";
-    font-family: "PP Neue Montreal", sans-serif;
     font-weight: 500;
     font-size: var(--note);
 }
@@ -119,7 +115,6 @@
     border: none;
     box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
 
-    font-family: "PP Neue Montreal", sans-serif;
     font-weight: 500;
     font-size: var(--subtitle);
     cursor: pointer;
@@ -144,7 +139,6 @@
     border: none;
     box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
 
-    font-family: "PP Neue Montreal", sans-serif;
     font-weight: 500;
     font-size: var(--subtitle);
   }

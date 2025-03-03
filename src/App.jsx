@@ -5,6 +5,7 @@ import { Banner } from "./components/banner/Banner";
 import { Grid } from "./components/grid/Grid";
 import { Menu } from "./components/menu/Menu";
 import { Cart } from "./components/cart/Cart";
+import { Pagination } from "./components/pagination/Pagination";
 
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
       <Grid />
       <Cart />
     </div>
+    <Pagination />
     </div>
     </>
   );

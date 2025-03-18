@@ -10,7 +10,7 @@ export function Modal() {
             {/* info */}
             <div className='modal__content'>
             <span className='modal__title'>Title</span>
-            <div>
+            <div className='i'>
             <span className='modal__price'>100$</span>
             <span className='modal__weight'>75 г</span>
             </div>
@@ -23,6 +23,7 @@ export function Modal() {
             <span className='modal__description'>Description</span>
             <span className='modal__compound'>Compound</span>
             <span className='modal__exp'>Expires</span>
+            <p>New</p>
             </div>
         </div>
     );

@@ -7,12 +7,14 @@ import { Menu } from "./components/menu/Menu";
 import { Cart } from "./components/cart/Cart";
 import { Pagination } from "./components/pagination/Pagination";
 import { Checkbox } from "./components/checkbox/Checkbox";
+import { Modal }  from './components/modal/Modal';
 
 
 export default function App() {
   return (
     <>
       <Header />
+      <Modal />
       <div className="page__wrapper">
         <div className="banner__wrapper">
           <Banner />

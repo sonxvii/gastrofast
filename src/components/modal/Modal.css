@@ -1,0 +1,25 @@
+.modal {
+    display: flex;
+
+    font-family: "PP Neue Montreal", sans-serif;
+
+    background-color: var(--main-White);
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+}
+
+.modal__gallery {
+    background-color: var(--alpha-Silver-15);
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__title {
+    color: var(--main-Gray);
+    font-weight: 700;
+    font-size: var(--title);
+}

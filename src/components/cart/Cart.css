@@ -171,14 +171,6 @@
     color: var(--main-Gray)
 }
 
-/* ===== DIVIDER ===== */
-.divider {
-    background-color: var(--main-Stone);
-    height: 1px;
-    border-radius: 2px;
-    width: auto;
-}
-
 /* ===== TO ORDER ===== */
 .order__warning {
     display: flex;

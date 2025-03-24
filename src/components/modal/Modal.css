@@ -1,25 +1,226 @@
 .modal {
     display: flex;
-
+    flex-direction: column;
+    width: 842px;
+    padding: 20px;
     font-family: "PP Neue Montreal", sans-serif;
-
     background-color: var(--main-White);
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+    overflow: hidden;
+}
+/* ===== WRAPPERS ===== */
+.modal__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* ===== CONTENT ===== */
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    max-height: calc(95vh - 92px);
+    padding-right: 10px;
+    flex: 1;
+}
+
+/* ===== GALLERY ===== */
+.modal__gallery {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    height: auto;
+    max-height: calc(95vh - 92px);
+    overflow-y: auto;
+}
+
+.modal__gallery__img {
+    height: 412px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background-color: var(--alpha-Silver-15);
     border-radius: 10px;
     border: none;
     box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
 }
 
-.modal__gallery {
-    background-color: var(--alpha-Silver-15);
-}
-
-.modal__content {
+/* ===== TITLE ===== */
+.modal__title__wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .modal__title {
     color: var(--main-Gray);
     font-weight: 700;
     font-size: var(--title);
+}
+
+/* ===== INFO ===== */
+.modal__info__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* ===== PRICE ===== */
+.modal__price {
+    color: var(--main-Gray);
+    font-weight: 700;
+    font-size: var(--title);
+}
+
+.modal__price::after {
+    display: inline-block;
+    content: "\00A0₽";
+    font-weight: 700;
+    font-size: var(--title);
+}
+
+/* ===== WEIGHT ===== */
+.modal__weight {
+    color: var(--main-Silver);
+    font-weight: 700;
+    font-size: var(--title);
+}
+
+.modal__weight::after {
+    display: inline-block;
+    content: "\00A0гр.";
+    font-weight: 700;
+    font-size: var(--title);
+}
+
+/* ===== MACRONUTRIENT ===== */
+.modal__macros {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.macros {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.macros dd {
+    font-weight: 700;
+    font-size: var(--title);
+    color: var(--main-Gray);
+}
+
+.macros dt {
+    font-weight: 500;
+    font-size: var(--note);
+    color: var(--main-Silver);
+}
+
+/* ===== TYPOGRAPHY ===== */
+.modal__section__subtitle {
+    color: var(--main-Silver);
+    font-weight: 500;
+    font-size: var(--note);
+    padding-bottom: 10px;
+}
+
+.modal__section__text {
+    color: var(--main-Gray);
+    font-weight: 500;
+    font-size: var(--subtitle);
+}
+/* ===== BUTTONS ===== */
+
+.modal__button__wrapper{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    flex-direction: row;
+    background-color: var(--main-White);
+    padding: 20px 0 0 0
+}
+/* ----- add ----- */
+.modal__button__add {
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 6px;
+    width: 100%;
+
+    color: var(--main-White);
+    background-color: var(--accent-Green);
+    border-radius: 6px;
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+
+    font-weight: 500;
+    font-size: var(--subtitle);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.modal__button__add:hover,
+.modal__button__add:focus {
+    background: 
+    linear-gradient(rgba(158, 155, 152, 0.15), rgba(158, 155, 152, 0.15)),
+    #55D486;
+}
+
+/* ----- counter ----- */
+.modal__counter {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    
+    color: var(--main-Gray);
+    background-color: var(--main-Powder);
+    border-radius: 6px;
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+
+    font-weight: 500;
+    font-size: var(--subtitle);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}  
+.modal__counter:hover,
+.modal__counter:focus {
+    background-color: var(--alpha-Silver-15);
+}
+.counter__btn {
+    background: none;
+    border: none;
+    color: var( --main-Silver);
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .counter__btn:hover {
+    color: var(--alpha-LightGray-30)
+  }
+
+
+/* ===== SCROLLBAR ===== */
+/* Для WebKit (Chrome, Safari, Edge) */
+.modal__content::-webkit-scrollbar,
+.modal__gallery::-webkit-scrollbar {
+    display: none;
+}
+
+/* Для Firefox */
+.modal__content,
+.modal__gallery {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }

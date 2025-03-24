@@ -40,6 +40,13 @@ body {
     background-color: var(--main-Powder);
     font-family: "PP Neue Montreal", sans-serif;
 }
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
 /* ===== WRAPPERS ===== */
 .page__wrapper {
     display: flex;
@@ -58,20 +65,46 @@ body {
     gap: 20px;
     background-color: var(--main-Powder);
 }
-
-
-
+/* ===== MENU ===== */
 .menu {
     flex-shrink: 0;
     width: 220px;
 }
 
-/* ===== icons ===== */
-
+/* ===== ICONS ===== */
 .icons {
     width: 22px;
     height: 22px;
 }
+
+/* ===== DIVIDER ===== */
+.divider {
+    background-color: var(--main-Stone);
+    height: 1px;
+    border-radius: 2px;
+    width: auto;
+}
+/* ===== CLOSE MODAL BUTTON ===== */
+.close__modal {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--main-Powder);
+    border-radius: 6px;
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+
+    transition: background-color 0.3s ease-in-out;
+}
+
+.close__modal:hover {
+    background-color: var(--alpha-Silver-15);
+}
+
 
 
 /* =====FONTS===== */

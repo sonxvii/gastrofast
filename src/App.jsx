@@ -1,37 +1,18 @@
-import "./assets/normalize.css";
-import "./assets/style.css";
-import { Header } from "./components/header/Header";
-import { Banner } from "./components/banner/Banner";
-import { Grid } from "./components/grid/Grid";
-import { Menu } from "./components/menu/Menu";
-import { Cart } from "./components/cart/Cart";
-import { Pagination } from "./components/pagination/Pagination";
-import { Checkbox } from "./components/checkbox/Checkbox";
-import { Modal }  from './components/modal/Modal';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Catalog } from "./pages/catalog/Catalog"
+import { Order } from "./pages/order/Order"
+// import { Authorization } from "./pages/authorization/Authorization"
 
-
-export default function App() {
+function App() {
   return (
-    <>
-      <Header />
-      <Modal />
-      <div className="page__wrapper">
-        <div className="banner__wrapper">
-          <Banner />
-          <Banner />
-          <Banner />
-          <Banner />
-        </div>
-        <div className="content__wrapper">
-          <div className="section__wrapper">
-            <Menu />
-            <Checkbox />
-          </div>
-          <Grid />
-          <Cart />
-        </div>
-        <Pagination />
-      </div>
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Catalog />}/>
+      <Route path="/order" element={<Order/>}/>
+      {/* <Route path="/auth" element={<Authorization/>}/> */}
+    </Routes>
+    </BrowserRouter>
   );
 }
+export default App;
+

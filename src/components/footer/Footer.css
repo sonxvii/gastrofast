@@ -1,0 +1,7 @@
+.footer {
+    display: flex;
+    height: 40vh;
+    border-radius: 20px 20px 0px 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 94.14%, rgba(0, 0, 0, 0.05) 100%), var(--main-Powder);
+    padding: 40px;
+}

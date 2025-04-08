@@ -18,7 +18,7 @@
     color: var(--accent-Green);
 }
 
-.auth__head {
+/* .auth__head {
     font-size: var(--title);
     font-weight: 700;
 }
@@ -26,7 +26,7 @@
 .auth__subhead {
     font-size: var(--subtitle);
     font-weight: 500;
-}
+} */
 
 .auth__link {
     text-decoration: none;

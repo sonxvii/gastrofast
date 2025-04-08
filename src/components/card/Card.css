@@ -67,8 +67,6 @@
 .card__price::after {
     display: inline-block;
     content: "\00A0₽"; 
-    font-weight: 700; 
-    font-size: var(--title); 
 }
 
 /* ----- title -----*/

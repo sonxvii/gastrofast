@@ -1,0 +1,182 @@
+.checkout {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-family: "PP Neue Montreal", sans-serif;
+}
+
+.checkout__cart {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    background-color: var(--main-White);
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+}
+
+/* ===== ТОВАР ===== */
+.cart__item {
+    display: flex;
+    flex-direction: row;
+}
+.cart__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.item__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item__info {
+    display: flex;
+    flex-direction: column;
+}
+.counter__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.item__img {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    background-color: var(--alpha-Silver-15);
+    border-radius: 8px;
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+}
+.item__weight {
+    font-size: var(--subtitle);
+    font-weight: 500;
+    color: var(--main-Silver);
+}
+.item__price {
+    font-size: var(--title);
+    font-weight: 700;
+}
+.item__price::after {
+    display: inline-block;
+    content: "\00A0₽";
+}
+
+/* ===== ИТОГО ===== */
+.checkout__sum {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    background-color: var(--main-White);
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+}
+
+.sum__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px 0 0 0;
+}
+
+.info__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.calc__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sum__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sale {
+    color: var(--accent-Red);
+}
+
+.items__cost::after {
+    display: inline-block;
+    content: "\00A0₽";
+}
+
+/* ===== К ОПЛАТЕ ===== */
+.sum__total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total__cost::after {
+    display: inline-block;
+    content: "\00A0₽";
+}
+
+/* ===== КАРТА ===== */
+.sum__map {
+    display: flex;
+    align-self: stretch;
+    height: 300px;
+    width: 600px;
+    align-items: flex-end;
+    padding: 10px;
+    background-color: var(--main-Powder);
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+}
+
+.map__params {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.map__zoom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.map__btn {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+}
+/* =====КНОПКИ===== */
+.sum__btn {
+    display: flex;
+    color: var(--main-White);
+    gap: 6px;
+    align-items: center;
+    background-color: var(--accent-Green);
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+}
+.add-cutlery {
+    display: flex;
+    color: var(--main-Gray);
+    gap: 6px;
+    align-items: center;
+    background-color: var(--main-Powder);
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+}

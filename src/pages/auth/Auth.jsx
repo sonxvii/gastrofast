@@ -1,11 +1,11 @@
 import "../../assets/normalize.css";
 import "../../assets/style.css";
-import "./Order.css"
+import "./Auth.css"
 import { ArrowLeft, NavArrowRight, WarningCircle } from "iconoir-react";
 import { Header } from "../../components/header/Header";
-import { Footer } from "../../components/footer/Footer"
-import { Checkbox } from "../../components/checkbox/Checkbox"
-export function Order() {
+import { Footer } from "../../components/footer/Footer";
+import { Checkbox } from "../../components/checkbox/Checkbox";
+export function Auth() {
     return (
         <>
             <Header />
@@ -15,10 +15,10 @@ export function Order() {
             </a>
             <div className="auth">
             <progress className="auth__progress" id="file" max="100" value="25"></progress>
-                <h1 className="auth__head">
+                <h1 className="head">
                     Добро пожаловать!
                 </h1>
-                <h2 className="auth__subhead">
+                <h2 className="subhead">
                     Введите номер телефона, чтобы войти
                     или зарегестрироваться
                 </h2>

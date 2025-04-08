@@ -47,6 +47,17 @@ h3 {
     margin: 0;
 }
 
+.head {
+    color: var(--main-Gray);
+    font-size: var(--title);
+    font-weight: 700;
+}
+
+.subhead {
+    color: var(--main-Gray);
+    font-size: var(--subtitle);
+    font-weight: 500;
+}
 /* ===== WRAPPERS ===== */
 .page__wrapper {
     display: flex;

@@ -8,6 +8,7 @@ import { Cart } from "../../components/cart/Cart";
 import { Pagination } from "../../components/pagination/Pagination";
 import { Checkbox } from "../../components/checkbox/Checkbox";
 import { Modal }  from "../../components/modal/Modal";
+import { Footer } from "../../components/footer/Footer"
 
 
 export function Catalog() {
@@ -32,6 +33,7 @@ export function Catalog() {
         </div>
         <Pagination />
       </div>
+      <Footer />
     </> 
   );
 }

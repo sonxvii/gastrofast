@@ -63,6 +63,18 @@
     content: "\00A0₽";
 }
 
+.item__weight::after {
+    display: inline-block; 
+    content: "\00A0гр.";
+    font-weight: 500;
+}
+
+.item__title {
+    font-size: var(--subtitle);
+    font-weight: 500;
+    color: var(--main-Gray);
+}
+
 /* ===== ИТОГО ===== */
 .checkout__sum {
     display: flex;

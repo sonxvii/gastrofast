@@ -1,8 +1,6 @@
 import "../../assets/normalize.css";
 import "../../assets/style.css";
 import "./Checkout.css";
-// import { Card } from "../card/Card";
-// import { products } from "../../data";
 import { Header } from "../../components/header/Header";
 import { Footer } from "../../components/footer/Footer";
 import { Cutlery, Minus, NavArrowRight, Plus, Position } from "iconoir-react";
@@ -10,6 +8,7 @@ export function Checkout() {
     return (
         <>
             <Header />
+            <div className="page__wrapper">
             <section className="checkout">
                 {/* =====Cart===== */}
                 <section className="checkout__cart">
@@ -110,6 +109,7 @@ export function Checkout() {
                     ))} */}
                 </div>
             </section>
+            </div>
             <Footer />
         </>
     );

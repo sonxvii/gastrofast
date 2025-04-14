@@ -1,13 +1,21 @@
 import "./Header.css";
+import { useNavigate } from "react-router-dom";
 import { Search, Position, Xmark, NavArrowRight, User } from "iconoir-react";
 
 export function Header() {
+    const navigate = useNavigate();
+
     return (
         <div className="header">
-            <img src="/logo-green-fill.svg" alt="logo" className="logo" />
+            <a href="http://localhost:5173/#">
+                <img src="/logo-green-fill.svg" alt="logo" className="logo" />
+            </a>
+
             <form action="" className="input__search">
                 <Search className="icons" />
-                <input type="text" className="search"
+                <input
+                    type="text"
+                    className="search"
                     placeholder="Искать в Гастрофаст"
                 />
                 <button className="cancel__search" name="cancel search">
@@ -18,7 +26,9 @@ export function Header() {
             <form action="" className="input__adress">
                 <Position className="icons" />
                 <span className="adress__is">Адрес</span>
-                <input type="text" className="adress"
+                <input
+                    type="text"
+                    className="adress"
                     placeholder="Лесная, 14Б"
                     readOnly
                 />
@@ -26,10 +36,15 @@ export function Header() {
                     <NavArrowRight className="icons" />
                 </button>
             </form>
-            <button className="sign__in" name="sign in">
-                <User className="icons"/>
+
+            <button
+                className="sign__in"
+                name="sign in"
+                onClick={() => navigate("/auth")}
+            >
+                <User className="icons" />
                 Войти
             </button>
         </div>
     );
-};
+}

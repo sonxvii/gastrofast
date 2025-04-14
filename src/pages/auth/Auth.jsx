@@ -9,6 +9,7 @@ export function Auth() {
     return (
         <>
             <Header />
+            <div className="page__wrapper">
             <a className="auth__link" href="/">
             <ArrowLeft className="auth__arrow"/>
             На главную
@@ -32,6 +33,7 @@ export function Auth() {
                     Продолжая авторизацию, вы соглашаетесь с политикой конфиденциальности, условиями сервиса и условиями продажи товаров
                     <WarningCircle className="icons" />
                 </div>
+            </div>
             </div>
             <Footer />
         </>

@@ -6,6 +6,28 @@
     flex-grow: 1;
 }
 
+.page-tint {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    z-index: 999; /* Ensure it's on top of the page */
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Ensure modal appears above the tint */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
 @media (max-width: 767px) {
     .catalog__grid {
         grid-template-columns: repeat(2, 1fr);

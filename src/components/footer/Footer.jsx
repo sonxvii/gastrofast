@@ -18,10 +18,8 @@ export function Footer() {
                 </ul>
                 </div>
                 <span className="footer__copyright">© 2025</span>
-            </div>
-            <div className="footer__logo">
-                <img src="../../../public/logo-black.svg" alt="" />
-            </div>
+            </div> 
+                <img className="footer__logo" src="../../../public/logo-black.svg" alt="" />
         </footer>
     );
 }

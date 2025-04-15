@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../../assets/normalize.css";
 import "../../assets/style.css";
+import "../catalog/Catalog.css"
 import { Header } from "../../components/header/Header";
 import { Banner } from "../../components/banner/Banner";
 import { Grid } from "../../components/grid/Grid";
@@ -30,12 +31,14 @@ export function Catalog() {
           <Banner />
         </div>
         <div className="content__wrapper">
-          <div className="section__wrapper">
+          <div className="menu__section">
             <Menu />
             <Checkbox />
           </div>
           <Grid products={products} onCardClick={openModal} />
+          <div className="cart__section">
           <Cart />
+          </div>
         </div>
         <Pagination />
       </div>

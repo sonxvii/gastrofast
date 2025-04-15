@@ -28,7 +28,7 @@ export function Grid({ onCardClick }) {
 
       {selectedProduct && (
         <>
-          <div className="page-tint" onClick={closeModal}></div> {/* Page Tint */}
+          <div className="page-tint" onClick={closeModal}></div>
           {createPortal(
             <Modal product={selectedProduct} onClose={closeModal} />,
             document.getElementById("modal-root")

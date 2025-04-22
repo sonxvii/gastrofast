@@ -84,3 +84,8 @@ export const checkboxData = [
     { id: 2, title: "Без сахара" },
     { id: 3, title: "Острое" },
 ];
+
+export const checkboxAgreement = [
+    {id: 1, title: "Получать выгодные предложения"},
+    {id: 2, title: "Делиться данными с партнёрами Гастрофаст"},
+];

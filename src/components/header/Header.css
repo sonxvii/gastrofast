@@ -133,3 +133,42 @@
 .sign__in:focus {
     background-color: var(--alpha-Silver-15);
 }
+
+.burger__menu {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+    color: var(--main-Gray);
+    background: none;
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+.input__search,
+.input__adress,
+.sign__in {
+    display: none;
+}
+.header {
+    justify-content: space-between;
+}
+}
+@media (min-width: 1024px) and (max-width: 1342px) {
+    .burger__menu {
+        display: none;
+    }
+    .logo,
+    .sign__in {
+        margin:0
+    }
+    .header {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1343px) {
+    .burger__menu {
+        display: none;
+    }
+}

@@ -8,7 +8,6 @@ import { Grid } from "../../components/grid/Grid";
 import { Menu } from "../../components/menu/Menu";
 import { Cart } from "../../components/cart/Cart";
 import { Pagination } from "../../components/pagination/Pagination";
-import { Checkbox } from "../../components/checkbox/Checkbox";
 import { Modal } from "../../components/modal/Modal";
 import { Footer } from "../../components/footer/Footer";
 import { products } from "../../data";
@@ -33,7 +32,6 @@ export function Catalog() {
         <div className="content__wrapper">
           <div className="menu__section">
             <Menu />
-            <Checkbox />
           </div>
           <Grid products={products} onCardClick={openModal} />
           <div className="cart__section">

@@ -1,10 +1,10 @@
 import "./Checkbox.css";
-import { checkboxData } from "../../data";
+import { checkboxAgreement } from "../../data";
 
 export function Checkbox() {
     return (
         <div className="checkbox">
-            {checkboxData.map((checkbox) => (
+            {checkboxAgreement.map((checkbox) => (
                 <div className="checkbox__item" key={checkbox.id}>
                     <input
                         className="checkbox__input"

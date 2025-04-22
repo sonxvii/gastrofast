@@ -1,6 +1,6 @@
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
-import { Search, Position, Xmark, NavArrowRight, User } from "iconoir-react";
+import { Search, Position, Xmark, NavArrowRight, User, Menu } from "iconoir-react";
 
 export function Header() {
     const navigate = useNavigate();
@@ -44,6 +44,10 @@ export function Header() {
             >
                 <User className="icons" />
                 Войти
+            </button>
+
+            <button className="burger__menu">
+                <Menu className="icons"/>
             </button>
         </div>
     );

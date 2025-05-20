@@ -8,15 +8,12 @@
 
     gap: 8px;
     flex-shrink: 0;
-    width: 220px;
 }
 
 .menu__elem {
     display: flex;
     border-radius: 8px;
-    width: auto;
-    height: auto;
-    padding: 10px;
+    padding: 10px 100px 10px 10px;
 
     font-size: var(--subtitle);
     font-weight: 500; 

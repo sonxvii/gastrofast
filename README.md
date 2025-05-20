@@ -12,8 +12,5 @@
 * HTML
 * CSS
 
-### Связаться со мной
-
-Telegram: [sonxvii](https://t.me/sonxvii)
-
-© 2025 SONXVII
+### Макет
+([Figma]https://www.figma.com/design/1yZCgx0WEjULBe57QP6j6N/%D0%B3%D0%B0%D1%81%D1%82%D1%80%D0%BE%D1%84%D0%B0%D1%81%D1%82?node-id=2036-859&t=cjAugQEuC0c7thV9-1)

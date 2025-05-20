@@ -20,33 +20,32 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1000; /* Ensure modal appears above the tint */
+    z-index: 1000; 
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-@media (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 720px) {
     .catalog__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 721px) and (max-width:1000px) {
     .catalog__grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
-@media (min-width: 1024px) {
+@media (min-width:1001px) and (max-width: 1100px) {
     .catalog__grid {
-        grid-template-columns: repeat(4, 1fr); 
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1301px) {
     .catalog__grid {
-        grid-template-columns: repeat(5, 1fr); 
+        grid-template-columns: repeat(5, 1fr);
     }
 }

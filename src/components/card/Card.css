@@ -144,7 +144,7 @@
   .counter__btn {
     background: none;
     border: none;
-    color: var( --alpha-White-45);
+    color: var(--alpha-White-45);
     cursor: pointer;
     transition: color 0.2s ease;
   }

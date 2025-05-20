@@ -10,9 +10,29 @@
     gap: 20px;
 }
 
-@media (max-width: 767px) {
-    .catalog__grid {
-        grid-template-columns: repeat(2, 1fr);
+.cloud-menu {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.category {
+    display: flex;
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--alpha-Silver-15);
+    font-family: "PP Neue Montreal", sans-serif;
+    font-weight: 500;
+    font-size: var(--subtitle);
+}
+
+@media (min-width: 320px) and (max-width: 720px)   {
+    .content__wrapper {
+        flex-direction: column;
+        align-items: center;
     }
     .menu__section {
         display: none;
@@ -25,29 +45,51 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 721px) and (max-width: 870px) {
+    .content__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
     .menu__section {
+        display: none;
+    }
+    .cart__section {
         display: none;
     }
     .banner__wrapper{
         display: none;
     }
+}
+@media (min-width:871px) and (max-width: 1300px) {
+    .content__wrapper {
+        flex-direction: row;
+        justify-content:flex-start;
+    }
     .catalog__grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    .content__wrapper {
-        gap: 10px;
+    .cart__section {
+        display: none;
     }
-}
-
-@media (min-width: 1024px) {
-    .catalog__grid {
-        grid-template-columns: repeat(4, 1fr); 
+    .cloud-menu {
+        display: none;
     }
+    .menu__section {
+        flex-grow: 1;
+    }
+    .menu__elem {
+        padding: 10px
+    }
+    
 }
-
-@media (min-width: 1400px) {
-    .catalog__grid {
-        grid-template-columns: repeat(5, 1fr); 
+@media (min-width:1301px) {
+    .cloud-menu {
+        display: none;
+    }
+    .content__wrapper{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
     }
 }

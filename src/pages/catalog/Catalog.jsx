@@ -33,6 +33,14 @@ export function Catalog() {
           <div className="menu__section">
             <Menu />
           </div>
+            {/* menu clouds */}
+          <section className="cloud-menu">
+          <button className="category">Азиатское</button>
+          <button className="category">Салаты</button>
+          <button className="category">Завтраки</button>
+          <button className="category">Восточное</button>
+          <button className="category">Десерты</button>
+          </section>
           <Grid products={products} onCardClick={openModal} />
           <div className="cart__section">
           <Cart />

@@ -67,12 +67,6 @@ h3 {
     /* align-items:center ; */
 }
 
-/* ===== MENU ===== */
-.menu {
-    flex-shrink: 0;
-    width: 220px;
-}
-
 /* ===== ICONS ===== */
 .icons {
     width: 22px;

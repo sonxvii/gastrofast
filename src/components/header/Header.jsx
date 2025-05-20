@@ -47,7 +47,7 @@ export function Header() {
             </button>
 
             <button className="burger__menu">
-                <Menu className="icons"/>
+                <Menu className="burger"/>
             </button>
         </div>
     );

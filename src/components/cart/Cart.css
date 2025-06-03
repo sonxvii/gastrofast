@@ -213,3 +213,7 @@
     font-weight: 500;
     font-size: var(--subtitle);
 }
+
+.order__link {
+    text-decoration: none;
+}

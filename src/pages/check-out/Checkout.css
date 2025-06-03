@@ -144,7 +144,6 @@
     align-self: stretch;
     align-items: flex-end;
     width: 100%;
-    height: 100%;
     padding: 10px;
     background-color: var(--main-Powder);
     border-radius: 10px;
@@ -196,4 +195,9 @@
     border-radius: 6px;
     border: none;
     box-shadow: inset 0 0 0 1px var(--alpha-Silver-15);
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    .checkout {
+        flex-direction: column;
+    }
 }
